@@ -43,6 +43,14 @@ export default {
     @include line-height(0.4rem);
     @include flex();
     @include text-align(center);
+    &>div {
+      @include rect(100%, 100%);
+      @include border-radius(5px);
+      @include overflow(hidden);
+      .van-search {
+        @include rect(auto, 100%)
+      }
+    }
   }
   .header-right {
     @include rect(0.5rem, 0.4rem);

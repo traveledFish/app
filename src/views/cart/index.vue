@@ -7,7 +7,7 @@
     </header-def>
     <div class="content">
       <ul class="cartlist">
-        <li class="cartitem" v-for='(item,index) of cartlist' :key='index'>
+        <li class="cartitem" v-for='item of cartlist' :key='item.proid' @click="cartItemClick(item.proid)">
           <van-card
             :price="item.price"
             :desc="item.brief"
@@ -64,6 +64,11 @@ export default {
       console.log(data)
       this.recomlist = data[0].data
     })
+  },
+  methods: {
+    cartItemClick (id) {
+      this.$router.push({ name: 'detail', params: { id: id } })
+    }
   }
 }
 </script>

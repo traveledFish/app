@@ -4,15 +4,15 @@
       <span class="iconfont icon-shouye"></span>
       <p>首页</p>
     </router-link>
-    <router-link to="./classify" tag="li">
+    <router-link to="/classify" tag="li">
       <span class="iconfont icon-fenlei"></span>
       <p>分类</p>
     </router-link>
-    <router-link to="./cart" tag="li">
+    <router-link to="/cart" tag="li">
       <span class="iconfont icon-gouwuche"></span>
       <p>购物车</p>
     </router-link>
-    <router-link to="./user" tag="li">
+    <router-link to="/user" tag="li">
       <span class="iconfont icon-yonghu"></span>
       <p>个人</p>
     </router-link>

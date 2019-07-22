@@ -1,8 +1,10 @@
 <template>
   <div class="container">
-    <header-def>
+     <header-def>
       <div slot="header-left"></div>
-      <div slot="header-center">分类</div>
+      <div slot="header-center">
+        <van-search placeholder="请输入搜索关键词" v-model="value" />
+      </div>
       <div slot="header-right">消息</div>
     </header-def>
     <div class="content">
@@ -156,9 +158,10 @@
 
 <script>
 import Vue from 'vue'
-import { Sidebar, SidebarItem } from 'vant'
+import { Sidebar, SidebarItem, Search } from 'vant'
 import Headerdef from '../../components/comment/Header2'
 
+Vue.use(Search)
 Vue.use(Sidebar)
 Vue.use(SidebarItem)
 export default {
@@ -199,6 +202,16 @@ export default {
 .container {
   .header {
     @include background-color(white);
+    .header-center {
+      &>div {
+        @include rect(100%, 100%);
+        @include border-radius(5px);
+        @include overflow(hidden);
+        .van-search {
+          @include rect(auto, 100%)
+        }
+      }
+    }
   }
   .content {
     @include flexbox();

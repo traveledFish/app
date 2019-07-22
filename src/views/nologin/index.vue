@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="nologin-banner">
-      <img src="https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/8bc5c8ca3da4043fc6c9dbfb32d5dc89_121_121.jpg" alt="">
+      <img src="" alt="../../../public/img/qr.png">
     </div>
     <div class="nologin-button">
       <div class="phonelogin" @click="loginclick">

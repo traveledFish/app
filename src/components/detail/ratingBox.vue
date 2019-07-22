@@ -17,7 +17,7 @@
       <div class="rating-cont">
         <div class="time"></div>
         <div class="text">
-          <span>adfjsdjlfdsjlfjsadfasfasfdasfagfdfjfdlfjasd</span>
+          <span>感觉还不错，被惊艳到了</span>
         </div>
         <ul class="piclist">
           <li><img src="//img14.360buyimg.com/n1/jfs/t14995/299/502330120/306901/f02cd9ff/5a2f8bd8Ne73378de.jpg" alt=""></li>
